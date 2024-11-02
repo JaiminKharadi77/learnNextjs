@@ -4,7 +4,7 @@ export const generateMetadata = async ({ params }) => {
   const { dynamicId } = await params;
 
   return {
-    title: `Dyanamic Meta Data ${dynamicId}`,
+    title: { absolute: `Dyanamic Meta Data ${dynamicId}` }, // absolute will ignonre template set by it parent component
   };
 };
 
