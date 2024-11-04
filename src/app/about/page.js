@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export const metadata = {
   title: "About",
@@ -6,7 +7,15 @@ export const metadata = {
 };
 
 function About() {
-  return <div>About</div>;
+  return (
+    <div>
+      <p>About</p>
+      <Link href={"/about/part1"} replace>
+        Part1
+      </Link>
+      <Link href={"/about/part1"}>Part1</Link>
+    </div>
+  );
 }
 
 export default About;
