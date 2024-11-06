@@ -7,6 +7,15 @@ export const metadata = {
 };
 
 function About() {
+  function getRandomInt(count) {
+    return Math.floor(Math.random() * count);
+  }
+  const random = getRandomInt(2);
+
+  if (random == 1) {
+    throw new Error("Error Loading About Page");
+  }
+
   return (
     <div>
       <p>About</p>
